@@ -1,40 +1,33 @@
-// fetch the data from the server
-fetch("data/characters.json").then((response) => {
-    console.log("Response", response);
+console.log('Chargement de la liste des personnages...');
 
-    if(!response.ok) {
-        if(response.status === 404)
-            throw new Error("The server responded with a 404 error");
-        else
-            throw new Error("The server responded with an error");
+// retrieve data from json file
+fetch('../data/characters.json')
+.then((response) => {
+    console.log(response);
+    return response.json();
+})
+.then((characters) => {
+    console.log(characters);
+    // add a ul element to the body after the h1 element
+    let ul = document.createElement('ul');
+    document.querySelector("h1").after(ul);
 
-    }else {
-        return response.json();
-    }
-}).then((users) => {
-    console.log("Users", users);
-    // add a new row for each user
-    users.forEach((user) => {
-        const tr = document.createElement("tr");
-        const td1 = document.createElement("td");
-        td1.innerText = user.name;
-        //const td2 = document.createElement("td");
-        //td2.innerText = user.username;
-       // const td3 = document.createElement("td");
-       // td3.innerHTML = '<a href="mailto:' + user.email + '">' + user.email + '</a>';
-        // td3.innerHTML = `<a href="mailto:${user.email}">${user.email}</a>`;
-        tr.appendChild(td1);
-//tr.appendChild(td2);
-       // tr.appendChild(td3);
-        document.querySelector("tbody").appendChild(tr);
+    // loop through the characters array
+    characters.forEach((character) => {
+        console.log(character);
+        // create a li element
+        let li = document.createElement('li');
+        // set the text of the li element to the name of the character
+        li.innerText = character.name;
+        // append the li element to the ul element
+        ul.append(li);
     });
-}).catch((error) => {
-    console.log("Error", error);
-    // add a row with error message
-    const tr = document.createElement("tr");
-    const td = document.createElement("td");
-    td.innerText = error.message;
-    tr.appendChild(td);
-    document.querySelector("tbody").appendChild(tr);
 
+    // add a h2 element to the body after the ul element with the number of characters
+    let h2 = document.createElement('h2');
+    h2.innerText = `Number of characters: ${characters.length}`;
+    ul.after(h2);
+
+}).catch((err) => {
+    console.log(err);
 });
