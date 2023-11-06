@@ -1,17 +1,16 @@
-import NbCharacters from './components/Compteur.js'
-import ListeCharacters  from './components/Liste.js'
-import Title from './components/Title.js'
+import './style.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-const characters = require('./data/characters.json')
+import routes from './routes';
+
+// Create a router that uses the client side history strategy for
+const router = createBrowserRouter(routes)
 
 function App() {
-return (
-  <>
-    <Title>Marvels characters</Title>
-    <ListeCharacters characters={characters}/>
-    <NbCharacters characters={characters}/>
-  </>
-);
+
+  return (
+    <RouterProvider router={router} />
+  );
 }
 
 export default App;
