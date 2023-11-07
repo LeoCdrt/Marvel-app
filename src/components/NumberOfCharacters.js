@@ -1,7 +1,7 @@
 export function NumberOfCharacters({ characters }) {
   if (characters.length === 0) {
-    return <p>There is no characters</p>;
+    return <p>Il n'y a pas de personnage</p>;
   }
 
-  return <p>There is {characters.length} characters</p>;
+  return <p>Il y a {characters.length} personnages</p>;
 }
