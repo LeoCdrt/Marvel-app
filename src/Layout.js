@@ -1,21 +1,24 @@
 import React from 'react';
 import { Outlet } from "react-router";
 import { NavLink } from "react-router-dom";
+import packageJson from '../package.json';
 
 const Layout = () => {
+    const version = packageJson.version;
+
     return (
         <>
             <header>
                 <h1>Marvel App</h1>
                 <nav>
-                    <NavLink to="/">Menu</NavLink> - <NavLink to="/about">A propos</NavLink> - <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/">Home</NavLink> - <NavLink to="/about">A propros</NavLink> - <NavLink to="/contact">Contact</NavLink>
                 </nav>
             </header>
             <main>
                 <Outlet />
             </main>
             <footer>
-                <p>Marvel App - 2023</p>
+                <p>Marvel App - {version}</p>
             </footer>
         </>
     );
