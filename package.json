@@ -41,5 +41,12 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3"
+  },
+  
+  "jest": {
+    "coveragePathIgnorePatterns" : [
+      "/src/index.js",
+      "/src/reportWebVitals.js"
+    ]
   }
 }
