@@ -6,8 +6,8 @@ const AboutPage = () => {
 
     return (
         <>
-            <h1>A propos de nous</h1>
-            <p>Nous sommes une équipe de fans de Marvel qui aiment créer des applications géniales !</p>
+            <h2>About Us</h2>
+            <p>We are a team of Marvel fans who love to create awesome apps!</p>
         </>
     );
 };

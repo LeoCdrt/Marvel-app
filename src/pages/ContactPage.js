@@ -6,9 +6,9 @@ const ContactPage = () => {
 
     return (
         <>
-            <h1>Contacter nous</h1>
+            <h2>Contact Us</h2>
             <p>
-            N'hésitez pas à nous contacter à l'adresse suivante <a href="mailto:marvelApp@gmail.com">marvelApp@gmail.com</a>
+                Feel free to contact us at <a href="mailto:marvelApp@gmail.com">marvelApp@gmail.com</a>
             </p>
         </>
     );
