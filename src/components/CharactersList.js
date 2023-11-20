@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export function CharactersList({ characters = [] }) {
     return (
@@ -13,3 +14,11 @@ export function CharactersList({ characters = [] }) {
         </ul>
     );
 }
+CharactersList.PropTypes = {
+    characters: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            name: PropTypes.string,
+        })
+    ),
+};
