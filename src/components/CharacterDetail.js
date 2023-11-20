@@ -14,7 +14,7 @@ function CharacterDetail({ character = {} }) {
   );
 }
 
-CharacterDetail.PropTypes = {
+CharacterDetail.propTypes = {
     character : PropTypes.shape({
         name: PropTypes.string,
         thumbnail: PropTypes.shape({

@@ -8,7 +8,7 @@ export function NumberOfCharacters({ characters = [] }) {
   );
 }
 
-NumberOfCharacters.PropTypes = {
+NumberOfCharacters.propTypes = {
   characters: PropTypes.shape({
     length: PropTypes.number,
   })
