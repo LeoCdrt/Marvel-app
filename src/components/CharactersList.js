@@ -17,7 +17,7 @@ export function CharactersList({ characters = [] }) {
 CharactersList.propTypes = {
     characters: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.number,
+            id: PropTypes.string,
             name: PropTypes.string,
         })
     ),
