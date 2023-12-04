@@ -2,8 +2,8 @@ import Layout from "./Layout";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import CharactersPage from "./pages/CharactersPage";
-import Question15 from "./pages/pageQuestions";
-import Question510 from "./pages/pageQuestions510";
+import Question16 from "./pages/pageQuestions";
+import Question710 from "./pages/pageQuestions710";
 
 import CharacterDetailPage from "./pages/CharacterDetailPage";
 import { getCharacterById, getCharacters } from "./api/character-api";
@@ -42,12 +42,12 @@ const routes = [
                 element: <ContactPage /> 
             },
             {
-                path: "/questions15",
-                element: <Question15/>,
+                path: "/questions16",
+                element: <Question16/>,
             },
             {
-                path: "/questions510",
-                element: <Question510/>,
+                path: "/questions710",
+                element: <Question710/>,
             },
         ],
     },

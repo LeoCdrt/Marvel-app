@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Question15 = () => {
+const Question16 = () => {
     // change the title of the page
     document.title = "Questions | Marvel App";
 
@@ -21,11 +21,13 @@ const Question15 = () => {
             <h2>Github</h2>
             <h3>Q5 :</h3> 
             <p>L'intérêt de protéger une branche est d'éviter les merges direct sur celle-ci si ils ne sont pas voulu, d'éviter une suppresion malencontreuse</p>
-
+            <h3>Q6 :</h3>
+            <p>Les pull requests permettent de demander une relecture du code par un autre développeur avant de merger une branche dans une autre. Elles permettent aussi de voir les différences entre les deux branches.</p>  
+           
 
 
         </>
     );
 };
 
-export default Question15;
+export default Question16;
