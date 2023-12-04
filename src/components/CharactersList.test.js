@@ -8,9 +8,9 @@ describe('CharactersList', () => {
     it('renders a list of characters', () => {
         // when
         const characters = [
-            { id: 1, name: 'Iron Man' },
-            { id: 2, name: 'Captain America' },
-            { id: 3, name: 'Thor' },
+            { id: 1, name: 'Iron Man - January 01, 2005' },
+            { id: 2, name: 'Captain America - January 05, 2005' },
+            { id: 3, name: 'Thor - January 08, 2005' },
         ];
 
         // then
@@ -51,5 +51,7 @@ describe('CharactersList', () => {
         const characterItems = screen.queryAllByRole('listitem');
         expect(characterItems).toHaveLength(0);
     });
+
+    
 
 });

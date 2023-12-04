@@ -7,6 +7,7 @@
     "@testing-library/user-event": "^13.5.0",
     "badge-maker": "^3.3.1",
     "d3": "^7.8.5",
+    "date-fns": "^2.30.0",
     "mermaid": "^10.6.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
