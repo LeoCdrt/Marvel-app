@@ -11,7 +11,7 @@ const Layout = () => {
             <header>
                 <h1>Marvel App</h1>
                 <nav>
-                    <NavLink to="/">Home</NavLink> - <NavLink to="/about">About</NavLink> - <NavLink to="/contact">Contact</NavLink> - <NavLink to="/questions">Les questions</NavLink>
+                    <NavLink to="/">Home</NavLink> - <NavLink to="/about">About</NavLink> - <NavLink to="/contact">Contact</NavLink> - <NavLink to="/questions15">Les questions 1-5</NavLink> - <NavLink to="/questions510">Les questions 6-10</NavLink>
                 </nav>
             </header>
             <main>
