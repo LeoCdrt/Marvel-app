@@ -2,7 +2,8 @@ import Layout from "./Layout";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import CharactersPage from "./pages/CharactersPage";
-import Question from "./pages/pageQuestions";
+import Question16 from "./pages/pageQuestions";
+import Question710 from "./pages/pageQuestions710";
 
 import CharacterDetailPage from "./pages/CharacterDetailPage";
 import { getCharacterById, getCharacters } from "./api/character-api";
@@ -41,8 +42,12 @@ const routes = [
                 element: <ContactPage /> 
             },
             {
-                path: "/questions",
-                element: <Question/>,
+                path: "/questions16",
+                element: <Question16/>,
+            },
+            {
+                path: "/questions710",
+                element: <Question710/>,
             },
         ],
     },
