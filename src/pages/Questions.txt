@@ -1,0 +1,41 @@
+Quel est l'intérêt d'une méthode agile dans un projet de développement logiciel ?
+
+L'intérêt de la méthode agile est de pouvoir parler facilement à son équipe et de pouvoir s'entraider. Pouvoir faire évoluer le projet au fur et à mesure suivant le changement de demande. 
+Permet de mettre à disposition l'application au fil de l'eau et d'avoir des retours.
+
+Quel est l'intérêt d'un sprint dans une méthode agile ?
+
+Le sprint permet de faire l'évolution du projet sur 3-4 semaines et d'avoir un retour de du client afin de changer des fonctionnalités plus voulu ou alors sur une autre forme.
+
+Quel est l'intérêt d'utiliser une librairie externe ?
+
+Celà nous évite de d'avoir recréer le code et d'utiliser des choses déjà existante.
+
+Quelles sont les précautions à prendre lors de l'utilisation d'une librairie externe ?
+
+Il faut que ça soit une librairie régulièrement mis à jour avec une bonne documentation. Il faut faire attention aux librairies peu utiliser elles peuvent être faites par des hackers.
+
+Quel est l'intérêt de découper une application en composants ?
+
+Celà permet de pouvoir réutiliser tout les composants dans n'importe quelle page.
+
+Est-ce qu'une couverture de test à 100% garantie l'absence de bug ?
+
+Non car si dans notre test on oublie de faire certains test alors celui-ci affichera 100% mais il y aura un bug sur le test unitaire non fais.
+
+Un test unitaire utilise-t-il des données réelles ou des données fictives ?
+
+Avec des données fictives représentative des réelles.
+
+Quel est le but d'un mock ?
+
+Afin de tester les composants React, il est nécessaire de simuler les données qui sont normalement récupérées.
+
+Quel est l'intérêt du fichier README.md ?
+
+De faire une présentation du projet et des différentes installation à faire pour lancer le projet.
+
+Les principes de développement mis en oeuvre peuvent-ils être appliqués à d'autres projets, d'autres langages et pourquoi ?
+
+Oui car ces principes permettent de faire avancer petit à petit le projet et d'avoir le retour des collègues ainsi que des clients.
+

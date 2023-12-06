@@ -10,7 +10,7 @@ export function CharactersList({ characters = [] }) {
                     <Link to={`/characters/${character.id}`}>
                         <strong>{character.name} </strong>
                         <small>
-                     - {character.modified && format(parseISO(character.modified), "MMMM d, yyyy")}
+                     {/* - {character.modified && format(parseISO(character.modified), "MMMM d, yyyy")} */}
                      </small>
                     </Link>
                     
@@ -24,7 +24,7 @@ CharactersList.propTypes = {
         PropTypes.shape({
             id: PropTypes.string,
             name: PropTypes.string,
-            date : PropTypes.date,
+            // date : PropTypes.date,
         })
     ),
 };
