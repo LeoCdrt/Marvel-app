@@ -19,7 +19,7 @@ const drawChart = (data) => {
     const color = d3.scaleOrdinal()
         // colors based on data
         .domain(data.map(d => d.name))
-        // .range(["red", "blue", "green", "yellow", "orange", "purple"]);
+        // .range(["redradius", "blue", "green", "yellow", "orange", "purple"]);
         .range(d3.schemeDark2);
         //.range(d3.quantize(t => d3.interpolateSpectral(t * 0.8 + 0.1), filteredData.length).reverse());
 
